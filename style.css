@@ -1,107 +1,230 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Work Sans', sans-serif;
-  background-color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #fff;
 }
 
 .h1-home {
-  font-weight: 900;
-  background-color: rgba(139, 139, 139, 0.353);
-  border-radius: 10px 10px 0 0;
-  text-align: center;
-  padding: 10px;
-  margin: -10px -10px 0 -10px;
+    font-weight: 900;
+    background-color: rgba(139, 139, 139, 0.353);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    padding: 10px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: 0;
 }
 
 h1 {
-  color: white;
-  text-align: center;
-  text-shadow: 0 7px 7px rgba(0, 0, 0, 0.193);
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.193);
+    margin: 0;
+    padding: 30px 0;
 }
 
 h2 {
-  color: rgb(54, 54, 53);
-  padding: 24px 0 0;
-  margin: 0;
+    color: #363635;
+    padding: 24px 0 0;
+    margin: 0;
 }
 
 p {
-  color: rgb(54, 54, 53);
-  padding: 0 0 24px;
-  margin: 0;
+    color: #363635;
+    padding: 0 0 24px;
+    margin: 0;
 }
 
 .diferente {
-  color: rgb(156, 156, 79);
+    color: #9c9c4f;
 }
 
 .style {
-  background-color: rgb(205, 215, 214);
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px rgba(64, 64, 64, 0.418);
-  max-width: 1200px;
-  padding: 10px;
-  margin: 30px auto;
-}
-
-div > p {
-  display: none;
-}
-
-div:hover > p {
-  display: block;
-  color: rgb(54, 54, 53);
-  background-color: azure;
-  width: 170px;
+    background-color: #cdd7d6;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(64, 64, 64, 0.418);
+    max-width: 100%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 30px;
 }
 
 div.video {
-  margin: 0 -20px 30px;
-  padding: 20px;
-  position: relative;
-  padding-bottom: 56.5%;
+    margin-bottom: 30px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 56.5%;
 }
 
 div.video > iframe {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
-.codigo {
-  background-color: rgb(139, 139, 139);
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px rgba(64, 64, 64, 0.418);
-  max-width: 300px;
-  padding: 10px;
-  display: inline-block;
-  margin: auto;
-}
-
-section > p {
-  color: white;
-}
-
-section > h3 {
-  color: white;
-}
+.codigo,
 
 .codigo2 {
-  background-color: rgb(139, 139, 139);
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px rgba(64, 64, 64, 0.418);
-  max-width: 300px;
-  padding: 10px;
-  display: inline-block;
-  padding-top:
+    background-color: #8b8b8b;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(64, 64, 64, 0.418);
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: auto;
 }
+
+section > p, section > h3 {
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: 500ms;
+}
+
+a {
+    background-color: rgba(64, 64, 64, 0.415);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0,)
+/* Large desktop */
+
+    @media only screen and (min-width: 1200px) 
+    .style, .style2 {
+    width: 100%;
+    max-width: 1199px;
+    }
+    /* Desktop */
+    @media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .style, .style2 {
+    width: 100%;
+    max-width: 960px;
+    }
+    }
+    
+    /* Tablet */
+    @media only screen and (max-width: 991px) and (min-width: 768px) {
+    .style, .style2 {
+    width: 100%;
+    max-width: 720px;
+    }
+    }
+    
+    /* Mobile Landscape */
+    @media only screen and (max-width: 767px) and (min-width: 576px) {
+    .style, .style2 {
+    width: 100%;
+    max-width: 540px;
+    }
+    }
+    
+    /* Mobile Portrait */
+    @media only screen and (max-width: 575px) {
+    .style, .style2 {
+    width: 100%;
+    max-width: 360px;
+    }
+    }
+    
+    /* Increase font-size for larger screens */
+    @media only screen and (min-width: 1200px) {
+    h1 {
+    font-size: 3em;
+    }
+    .h1-home {
+    font-size: 2em;
+    }
+    h2 {
+    font-size: 2em;
+    }
+    p {
+    font-size: 1.2em;
+    }
+    .codigo, .codigo2 {
+    font-size: 1.2em;
+    }
+    }
+    
+    @media only screen and (max-width: 1199px) and (min-width: 768px) {
+    h1 {
+    font-size: 2.5em;
+    }
+    .h1-home {
+    font-size: 1.8em;
+    }
+    h2 {
+    font-size: 1.8em;
+    }
+    p {
+    font-size: 1.1em;
+    }
+    .codigo, .codigo2 {
+    font-size: 1.1em;
+    }
+    }
+    
+    @media only screen and (max-width: 767px) {
+    h1 {
+    font-size: 2em;
+    }
+    .h1-home {
+    font-size: 1.5em;
+    }
+    h2 {
+    font-size: 1.5em;
+    }
+    p {
+    font-size: 1em;
+    }
+    .codigo, .codigo2 {
+    font-size: 1em;
+    }
+    }
+    
+    /* Adjust margins and paddings for smaller screens */
+    @media only screen and (max-width: 991px) {
+    .h1-home {
+    margin-left: -20px;
+    }
+    .style, .style2 {
+    margin-top: 20px;
+    }
+    }
+    
+    @media only screen and (max-width: 767px) {
+    .h1-home {
+    margin-left: 0px;
+    }
+    .style, .style2 {
+    margin-top: 10px;
+    }
+    }
+    
+    /* Make videos responsive */
+    @media only screen and (max-width: 767px) {
+    div.video > iframe {
+    width: 100%;
+    height: 60vw;
+    top: 0;
+    left: 0;
+    margin: 0;
+    }
+    }
