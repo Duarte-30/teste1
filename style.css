@@ -272,7 +272,7 @@ a {
     }
 
     p.rodape {
-    color: white;
+        text-decoration-color: white;
     background-color: rgba(0, 0, 0, 0);
     font-size: 1em;
     text-align: center;
