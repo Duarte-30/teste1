@@ -69,11 +69,12 @@ p {
 .style {
     background-color: #cdd7d6;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(64, 64, 64, 0.418);
+    box-shadow: 5px 5px 9px rgba(64, 64, 64, 0.418);
     max-width: 100%;
     padding: 10px;
     margin: auto;
     margin-top: 30px;
+    margin: 10px;
 }
 
 div.video {
